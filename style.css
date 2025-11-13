@@ -1,0 +1,63 @@
+body{
+    color: purple;
+    background-color: yellow;
+}
+
+#page {
+    width: 80%;
+    margin-top: 80%;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#About-me {
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+#work {
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+#Contacts {
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+
+
+.section {
+    padding: 16px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .gallery {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .gallery figure {
+        width: 30%;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
