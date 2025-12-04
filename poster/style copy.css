@@ -2,56 +2,42 @@ body {
     margin: 0;
     font-family: "Notable", sans-serif;
     font-style: normal;
-    
-
-}
-
-.contenitore-poster {
-    width: 375px;
-    height: 667px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.immagine {
     background-image: url(images/the-weeknd.jpg);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    filter: brightness(0.7) contrast(1.1);
+    filter: opacity(1);
+}
+
+.contenitore-poster {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
 }
 
 .titolo {
     position: relative;
     color: #D6621A;
     font-family: "Notable", sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 1px;
-    margin-top: 3rem;
+    font-size: 2rem;
+    letter-spacing: 0.5vw;
+    margin-top: 5vh;
     text-align: center;
     opacity: 80%;
 }
-
 
 .barra-info {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 3rem;
-    box-sizing: border-box;
-    margin-top: auto;
+    margin-top: 60vh;
+    color: #ffffff;
+    opacity: 80%;
 }
-
 
 .sezione-data {
     text-align: left;
@@ -62,23 +48,23 @@ body {
 }
 
 .sezione-info p.etichetta {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
     font-weight: bold;
-    margin-bottom: 0.5rem;
-    letter-spacing: 1px;
+    margin-bottom: 1vh;
+    letter-spacing: 0.5vw;
     margin-top: 0;
 }
 
 .sezione-info p {
-    color: #ffffff;
-    margin: 0.25rem 0;
-    font-size: 0.7rem;
-    opacity: 80%;
+    margin: 0.5vh 0;
+    font-size: 1.5vh;
+
 }
 
-
 .album {
-    padding-top: 3rem;
+    padding-top: 5vh;
+    /* sostituito 3rem con vh */
+    text-align: center;
 }
 
 .album h2 {
@@ -86,25 +72,15 @@ body {
     color: #ffffff;
     opacity: 80%;
     font-family: "Notable", sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    margin-bottom: 3rem;
+    font-size: 2vh;
+    /* sostituito 0.8rem con vh */
+    letter-spacing: 0.7vw;
+    /* sostituito 2px con vw */
+    margin-bottom: 5vh;
+    /* sostituito 3rem con vh */
 }
 
-
-
-
-/* 
-                                                                                                                                                                                                                                                CLASSI DI SPACING
-
-                                                                                                                                                                                                                                                0.25 rem = 4px
-                                                                                                                                                                                                                                                0.5 rem = 8px
-                                                                                                                                                                                                                                                1 rem = 16px
-                                                                                                                                                                                                                                                1.5 rem = 24px
-                                                                                                                                                                                                                                                2 rem = 32px
-                                                                                                                                                                                                                                                3 rem = 48px 
-                                                                                                                                                                                                                                                */
-
+       
 .m-1 {
     margin: 0.25rem !important;
 }
@@ -469,89 +445,85 @@ body {
 
 
 /* X-Small devices (portrait phones, less than 576px)
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        No media query for `xs` since this is the default in Bootstrap */
-
+ 
 /* // Small devices (landscape phones, 576px and up) */
 
-@media screen and (min-width: 576px) {
-
-   .contenitore-poster {
-    width: 100vw;             
-    height: 100vh;           
-    aspect-ratio: 1440 / 1024; 
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-}
-
-
-.immagine {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(images/the-weeknd.jpg);
-    background-size:cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: brightness(0.7) contrast(1.1);
-}
-
-.titolo {
-    position: relative;
-    color: #D6621A;
-    font-family: "Notable", sans-serif;
-    font-size: 3rem;
-    letter-spacing: 1px;
-    margin-top: 1rem;
-    text-align: center;
-    opacity: 80%;
-}
-
-
-.barra-info {
-    margin-bottom: 7rem;
-}
-
-
-.sezione-info p.etichetta {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    letter-spacing: 1px;
-    margin-top: 0;
-}
-
-.sezione-info p {
-    color: #ffffff;
-    margin: 0.25rem 0;
-    font-size: 0.7rem;
-    opacity: 80%;
-}
-
-
-.album {
-    padding-top: 3rem;
-}
-
-.album h2 {
-    position: relative;
-    color: #ffffff;
-    opacity: 80%;
-    font-family: "Notable", sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    margin-bottom: 1rem;
-}
-
-
-
-
-}
+@media screen and (min-width: 1024px) {}
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 992px) {
+
+    .contenitore-poster {
+        width: 100vw;
+        min-height: 100vh;
+        justify-content: space-between;
+        align-content: space-between;
+
+    }
+
+
+    .titolo {
+        position: relative;
+        color: #D6621A;
+        font-family: "Notable", sans-serif;
+        font-size: 12vh;
+        letter-spacing: 1px;
+        text-align: center;
+        opacity: 80%;
+    }
+
+
+    .barra-info {
+        margin-top: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+
+
+    }
+
+    .sezione-data {
+        margin-right: 15vw;
+    }
+
+    .sezione-luogo {
+        margin-left: 15vw;
+    }
+
+
+    .sezione-info p.etichetta {
+        font-size: 4vh;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        letter-spacing: 1px;
+        margin-top: 0;
+    }
+
+
+    .sezione-info p {
+        color: #ffffff;
+        margin: 0.25rem 0;
+        font-size: 3vh;
+        opacity: 80%;
+    }
+
+
+    .album {
+        margin-top: 28vh;
+    }
+
+    .album h2 {
+        position: relative;
+        color: #ffffff;
+        opacity: 80%;
+        font-family: "Notable", sans-serif;
+        font-size: 6vh;
+        letter-spacing: 2px;
+    }
+
+
+}
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width:1400px) {}
