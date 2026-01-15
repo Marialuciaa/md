@@ -1,5 +1,17 @@
 html{
-    font-size: 16px;
+    background-color: rgb(53, 1, 102);
+    
+}
+
+
+h1{
+    color:chocolate;
+    font-size: 30px;
+    
+}
+
+h2{
+    color: rgb(244, 244, 244);
 }
 
 body{
@@ -20,20 +32,20 @@ li {
 }
 
 a, a:link{
-    color: rgb(154, 12, 255);
+    color:chocolate;
     text-decoration: none;
 }
 
 a:visited {
-    color:rgb(92, 0, 157)
+    color:rgb(244, 244, 244);
 }
 
 
 a:hover, a:focus {
-    color: rgb(203, 0, 180);
+    color:blanchedalmond;
 
 }
 
 a:active{
-    color:aqua
+    color:chocolate;
 }
