@@ -63,7 +63,6 @@ body {
 
 .album {
     padding-top: 5vh;
-    /* sostituito 3rem con vh */
     text-align: center;
 }
 
@@ -73,11 +72,8 @@ body {
     opacity: 80%;
     font-family: "Notable", sans-serif;
     font-size: 2vh;
-    /* sostituito 0.8rem con vh */
     letter-spacing: 0.7vw;
-    /* sostituito 2px con vw */
     margin-bottom: 5vh;
-    /* sostituito 3rem con vh */
 }
 
        
@@ -520,6 +516,13 @@ body {
         font-family: "Notable", sans-serif;
         font-size: 6vh;
         letter-spacing: 2px;
+    }
+
+    .hidden-mobile {
+        position: absolute;
+        font-size: 40%;
+        top: 0%;
+        
     }
 
 

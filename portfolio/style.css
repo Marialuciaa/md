@@ -1,6 +1,7 @@
 body{
     color: rgb(193, 191, 191);
     background-color: rgb(34, 0, 76);
+    font-family: "Lora", serif;
 }
 
 #page {
@@ -24,7 +25,6 @@ body{
 }
 
 
-
 .section {
     padding: 16px;
 }
@@ -33,8 +33,39 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
+
+
+
+#intro-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; 
+}
+
+
+.button {
+    width: 120px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    z-index: 10;
+}
+
+
+.div { 
+    
+    color: white;
+    font-family: monospace;
+    text-align: center;
+}
 
 /* X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap

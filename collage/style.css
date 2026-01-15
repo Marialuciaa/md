@@ -1,0 +1,243 @@
+.contenitore {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(92, 92, 92);
+    display: flex;
+    justify-content: column;
+    align-items: center;
+}
+
+.solo-desktop {
+    display: none;
+}
+
+
+.mondo {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    left: 10px;
+    width: 350px;
+    height: 350px;
+
+}
+
+.donna {
+    position: absolute;
+    z-index: 3;
+    bottom: 0%;
+    max-height: 100vh;
+    transform: translateX(-8%)rotateY(180deg);
+}
+
+.farfalla {
+    position: absolute;
+    z-index: 2;
+    bottom: 63%;
+    width: 200px;
+    height: 200px;
+    max-height: 100vh;
+    transform: translateX(69%)rotate(20deg);
+}
+
+.rosa {
+    position: absolute;
+    z-index: 3;
+    bottom: 47%;
+    width: 200px;
+    height: 200px;
+    max-height: 100vh;
+    transform: translateX(44%) rotate(200deg);
+}
+
+.uccello {
+    position: absolute;
+    z-index: 4;
+    bottom: 24%;
+    left: 4%;
+    width: 20%;
+    height: auto
+}
+
+.foglie {
+    position: absolute;
+    z-index: 2;
+    top: 5%;
+    left: 11%;
+    height: 58%;
+    width: auto;
+    max-height: 100vh;
+    transform: rotate(340deg);
+
+}
+
+.crisantemo {
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: 15%;
+    height: 50%;
+    transform: rotate(355deg);
+
+}
+
+.postit {
+    position: absolute;
+    z-index: 1;
+    bottom: 17%;
+    height: 32%;
+    right: 6%;
+    transform: rotate(347deg);
+}
+
+.arctic {
+    position: absolute;
+    z-index: 2;
+    bottom: 28%;
+    height: 18%;
+    left: 32%;
+    transform: rotate(-264deg);
+}
+
+
+@media (min-width: 992px) {
+
+    .contenitore {
+        width: 100vw;
+        min-height: 100vh;
+        position: relative;
+    }
+
+
+    .mondo {
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 38%;
+        width: 25%;
+        height: auto;
+    }
+
+    .donna {
+        position: absolute;
+        z-index: 3;
+        bottom: 0%;
+        height: 74%;
+        width: auto;
+        left: 35%;
+        transform: rotateY(180deg);
+    }
+
+    .farfalla {
+        position: absolute;
+        z-index: 2;
+        bottom: 63%;
+        width: 13%;
+        height: auto;
+        max-height: 100vh;
+        left: 50%;
+        transform: rotate(30deg);
+    }
+
+    .rosa {
+        position: absolute;
+        z-index: 3;
+        bottom: 50%;
+        width: 14%;
+        height: auto;
+        max-height: 100vh;
+        left: 43%;
+        transform: rotate(200deg);
+    }
+
+    .uccello {
+        position: absolute;
+        z-index: 4;
+        bottom: 27%;
+        left: 38%;
+        width: 8%;
+        height: auto
+    }
+
+    .foglie {
+        position: absolute;
+        z-index: 2;
+        top: 5%;
+        left: 42%;
+        height: 58%;
+        width: auto;
+        max-height: 100vh;
+        transform: rotate(340deg);
+
+    }
+
+    .crisantemo {
+        position: absolute;
+        z-index: 1;
+        top: 0%;
+        right: 38%;
+        height: 50%;
+        max-height: 100vh;
+        transform: rotate(355deg);
+
+    }
+
+    .postit {
+        position: absolute;
+        z-index: 1;
+        bottom: 20%;
+        height: 32%;
+        left: 50%;
+        max-width: 100vh;
+        transform: rotate(347deg);
+    }
+
+    .arctic {
+        position: absolute;
+        z-index: 2;
+        bottom: 33%;
+        height: 18%;
+        left: 48%;
+        transform: rotate(-264deg);
+    }
+
+
+    .solo-desktop {
+        display: block;
+        position: absolute;
+
+        font-family: "Tangerine", cursive;
+        font-style: normal;
+
+        font-size: 600%;
+        z-index: 5;
+        bottom: 47%;
+        left: 25%;
+        color: rgb(13, 52, 13);
+        font-weight: 700;
+        transition: all 0.5s ease;
+        animation: romanticBlackPulse 4s ease-in-out infinite;
+    }
+
+    @keyframes romanticBlackPulse {
+
+        0%,
+        100% {
+            transform: scale(1);
+            color: rgb(6, 12, 43);
+            text-shadow: none;
+        }
+
+        50% {
+            transform: scale(1.15);
+            color: #000000;
+            text-shadow:
+                0 0 15px #b0b0b0,
+                0 0 30px #333e46;
+
+
+        }
+    }
+
+}

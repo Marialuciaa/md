@@ -16,6 +16,10 @@ body {
 }
 
 
+.elementi_centrali{
+    display: flex;
+}
+
 .immagine {
     background-image: url(images/the-weeknd.jpg);
     position: absolute;
