@@ -1,0 +1,67 @@
+body {
+    text-align: center; 
+    background-color: #00225e;
+    margin: 0;
+    padding: 20px;
+}
+
+
+#box-animazione {
+    display: inline-block; 
+    margin-bottom: 45px;   
+    margin-right: 7%;
+}
+
+
+.box-foto {
+    width: 100%;         
+}
+
+.sinner_musetti {
+    width: 390px;
+    height: auto;
+    display: inline-block;
+    margin-top: 40px;  
+    margin-left: 1%;    
+    position: relative;   
+}
+
+.testo {
+    position: absolute;
+    bottom: 17%;
+    right: 13%;
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gold;
+}
+
+
+@media (min-width: 992px) {
+
+    #box-animazione {
+    display: inline-block; 
+    margin-bottom: 45px;   
+    margin-right:1%;
+}
+
+
+
+.sinner_musetti {
+    width: 30%;
+    height: auto;
+    top:51%;
+    left:33.5%;   
+    position: absolute;   
+}
+
+.testo {
+    position: absolute;
+    bottom: 19%;
+    right: 14%;
+    transform:rotate(90deg);
+    font-size: 8rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gold;
+}
+
+}
