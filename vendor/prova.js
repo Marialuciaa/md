@@ -1,8 +1,8 @@
 let paddleLeftX = 20;
-let paddleLeftY = 200;
+let paddleLeftY = 170;
 
-let paddleRightX = 380;
-let paddleRightY = 200;
+let paddleRightX = 280;
+let paddleRightY = 170;
 
 let paddleSpeed = 2;
 let paddleHeight = 80;
@@ -11,15 +11,15 @@ let paddleWidth = 10;
 let leftScore = 0;
 let rightScore = 0;
 
-let ballPosX = 200;
-let ballPosY = 200;
+let ballPosX = 150;
+let ballPosY = 170;
 let ballSpeedX = 0;
 let ballSpeedY = 0;
 let ballSize = 10;
 
 function setup() {
   // Le dimensioni del tuo Ping Pong
-  let cnv = createCanvas(400, 400); 
+  let cnv = createCanvas(300, 300); 
   cnv.parent('box-animazione');
 
   // Draw rectangles from their center
@@ -49,8 +49,8 @@ function draw() {
   square(ballPosX, ballPosY, ballSize);
 
   // Draw the score
-  text(leftScore, width * 0.25, height * 0.1);
-  text(rightScore, width * 0.75, height * 0.1);
+  text(leftScore, width * 0.25, height * 0.2);
+  text(rightScore, width * 0.75, height * 0.2);
 
   // Move the ball using its current speed
   ballPosX += ballSpeedX;
@@ -158,7 +158,7 @@ function draw() {
 
   // Show 'Click to start' if game is paused
   if (isLooping() === false) {
-    text('Click to start', width / 2, height / 2 - 20);
+    text('Click to start', width / 2, height / 2 +8);
   }
 }
 
