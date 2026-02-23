@@ -20,7 +20,6 @@ body {
 }
 
 .titolo {
-    position: relative;
     color: #D6621A;
     font-family: "Notable", sans-serif;
     font-size: 2rem;
@@ -31,7 +30,6 @@ body {
 }
 
 .barra-info {
-    position: relative;
     display: flex;
     justify-content: space-between;
     margin-top: 60vh;
@@ -67,7 +65,6 @@ body {
 }
 
 .album h2 {
-    position: relative;
     color: #ffffff;
     opacity: 80%;
     font-family: "Notable", sans-serif;
@@ -459,7 +456,6 @@ body {
 
 
     .titolo {
-        position: relative;
         color: #D6621A;
         font-family: "Notable", sans-serif;
         font-size: 12vh;
@@ -471,7 +467,6 @@ body {
 
     .barra-info {
         margin-top: auto;
-        position: relative;
         display: flex;
         justify-content: space-between;
         align-content: space-between;
@@ -510,7 +505,6 @@ body {
     }
 
     .album h2 {
-        position: relative;
         color: #ffffff;
         opacity: 80%;
         font-family: "Notable", sans-serif;
@@ -518,12 +512,6 @@ body {
         letter-spacing: 2px;
     }
 
-    .hidden-mobile {
-        position: absolute;
-        font-size: 40%;
-        top: 0%;
-        
-    }
 
 
 }
